@@ -13,18 +13,23 @@ Table of Content:
 
 ## About The App
 The app is used to register users info:
-●	Name
-●	Surname
-●	Date of birth
-●	Email
-●	Captcha
-This information will be stored (in a database persistently). Additionally, the date on which the registration was made will be included. 
+- Name
+- Surname
+- Date of birth
+- Email
+- Captcha
+- This information will be stored (in a database persistently). Additionally, the date on which the registration was made will be included. 
 
 Screenshots
 ![alt text](image.png)
 
 ![alt text](image-1.png)
 ![alt text](image-2.png)
+# Pre-requisites
+- Install [Node.js](https://nodejs.org/en/) version 20.0.0
+- Install [Yarn][https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable]
+- Install [Docker][https://docs.docker.com/desktop/setup/install/windows-install/]
+  
 ## Technologies
 
  Vite, ReactJS, Node JS, express, MongoDB, and Docker
@@ -50,17 +55,26 @@ run npm install
 
 ## Approach
 
-I adopted the BEM naming style for my css class names and ...
+Use Mern stack, where backend would be dependent on microservice technology patterns 
+## Data Flow
+![image](https://github.com/user-attachments/assets/4104b9da-30c4-4e03-b534-089e60beb9b1)
+## Features:
+- CRV (Create, Read, Verify captcha) with Node(Express) and React.
+- Use the MongoDB database to store data.
+- OpenApI documentation on http://localhost:8080/api/v1/docs
+- API is authenticated using API-key
 
 ## Run Docker
-Install
+- Install
 1- Add .env file in root of repo with below content
+```
 REACT_APP_SITE_KEY={CATCHA_SITE_KEY}
 SITE_SECRET={captcha}
 token={API_KEY}
+```
 2- Run "docker compose up -d"
 
-Validate API:
+- Validate API:
 List all users
 curl --location 'localhost:8080/api/v1/users' \
 --header 'x-api-key: {API_KEY}' \
