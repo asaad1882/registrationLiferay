@@ -7,7 +7,7 @@ COPY . .
 RUN npm run build --mode=production
 
 # Stage 2, use the compiled app, ready for production with Nginx
-FROM nginx:1.21.6-alpine
+FROM nginx:1.26.2-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY /nginx-custom.conf /etc/nginx/conf.d/default.conf
 COPY env.sh /docker-entrypoint.d/env.sh
