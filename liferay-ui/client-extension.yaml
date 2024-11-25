@@ -1,0 +1,15 @@
+assemble:
+    - from: build/static
+      into: static
+my-react-custom-element:
+    cssURLs:
+        - css/main.*.css
+    friendlyURLMapping: liferay-ui
+    htmlElementName: liferay-ui
+    instanceable: false
+    name: My React Custom Element
+    portletCategoryName: category.client-extensions
+    type: customElement
+    urls:
+        - js/main.*.js
+    useESM: true
