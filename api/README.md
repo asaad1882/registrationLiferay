@@ -48,12 +48,12 @@ The folder structure of this app is explained below:
 | **dist**                 | Contains the distributable (or output) from your TypeScript build.  |
 | **node_modules**         | Contains all  npm dependencies                                                            |
 | **src**                  | Contains  source code that will be compiled to the dist dir                               |
-| **configuration**        | Application configuration including environment-specific configs 
-| **src/controllers**      | Controllers define functions to serve various express routes.  
-| **src/middlewares**      | Express middlewares which process the incoming requests before handling them down to the routes
-| **src/routes**           | Contain all express routes, separated by module/area of application                       
-| **src/models**           | Models define schemas that will be used in storing and retrieving data from Application database  |
-| **src/monitoring**      | Prometheus metrics |
+
+| **src/v1/controllers**      | Controllers define functions to serve various express routes.  
+| **src/v1/middlewares**      | Express middlewares which process the incoming requests before handling them down to the routes
+| **src/v1/routes**           | Contain all express routes, separated by module/area of application                       
+| **src/v1/models**           | Models define schemas that will be used in storing and retrieving data from Application database  |
+| **src/v1/utils**           | Contains helper classes such as connection and swagger  |
 | **src**/server.ts         | Entry point to express app                                                               |
 | package.json             | Contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)   | tsconfig.json            | Config settings for compiling source code only written in TypeScript    
                                             
