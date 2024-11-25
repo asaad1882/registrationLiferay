@@ -4,9 +4,9 @@ services:
     build: ./liferay-ui
     environment:
       - NODE_ENV=production
-      - MY_APP_REACT_SITE=
-      - MY_APP_SITE_SECRET=
-      - MY_APP_API_KEY=
+      - MY_APP_REACT_SITE=$REACT_APP_SITE_KEY
+      - MY_APP_SITE_SECRET=$SITE_SECRET
+      - MY_APP_API_KEY=$token
       - MY_APP_API_URL=http://localhost:8080/api/v1
     ports:
       - '80:80'
@@ -16,6 +16,11 @@ services:
     build: ./api
     ports:
       - '8080:8080'
+    env_file: .env
+    environment:
+      - REACT_APP_SITE_KEY=$REACT_APP_SITE_KEY
+      - SITE_SECRET=$SITE_SECRET
+      - token=$token
     depends_on:
       - mongo
   mongo:

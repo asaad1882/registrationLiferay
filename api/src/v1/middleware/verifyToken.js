@@ -1,5 +1,6 @@
 exports.verifyToken=(req, res, next)=> {
   const token = process.env.token || "t0k3n";
+  console.log("token:"+token)
   const API_KEY="x-api-key";
   
   if (req.headers[API_KEY] ) {
