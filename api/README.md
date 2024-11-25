@@ -65,11 +65,7 @@ Npm scripts basically allow us to call (and chain) terminal commands via npm.
 
 | Npm Script | Description |
 | ------------------------- | ------------------------------------------------------------------------------------------------- |
-| `start`                   | Runs full build and runs node on dist/index.js. Can be invoked with `npm start`                  |
-| `build:copy`                   | copy the *.yaml file to dist/ folder      |
-| `build:live`                   | Full build. Runs ALL build tasks       |
-| `build:dev`                   | Full build. Runs ALL build tasks with all watch tasks        |
+| `start`                   | Runs full build and runs node on dist/index.js. Can be invoked with `npm start`                     | 
 | `dev`                   | Runs full build before starting all watch tasks. Can be invoked with `npm dev`                                         |
-| `test`                    | Runs build and run tests using mocha        |
-| `lint`                    | Runs TSLint on project files       |
+
 
