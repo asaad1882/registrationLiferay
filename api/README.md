@@ -22,9 +22,11 @@ git clone  <git lab template url> <project_name>
 REACT_APP_SITE_KEY={REACT_GOOGLE_SITE_SECERT}
 SITE_SECRET={GOOGLE_SITE_SECERT}
 token={YOUR_API_KEY}
+```
 - Install dependencies
 ```
 cd <project_name>
+```
 npm install
 ```
 - Build and run the project
