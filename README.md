@@ -25,29 +25,34 @@ Screenshots
 
 ![alt text](image-1.png)
 ![alt text](image-2.png)
-Technologies
+## Technologies
 
-I used Vite, ReactJS, Node JS, express, MongoDB, and Docker
+ Vite, ReactJS, Node JS, express, MongoDB, and Docker
 ## Setup
 
     download or clone the repository
-    run npm install
-    ...
+    Add .env to both api and liferay-ui 
+api .env
+```
+REACT_APP_SITE_KEY={REACT_GOOGLE_SITE_SECERT}
+SITE_SECRET={GOOGLE_SITE_SECERT}
+token={YOUR_API_KEY}
+```
+liferay-ui .env
+```
+VITE_REACT_APP_SITE_KEY={MY_APP_REACT_SITE}
+VITE_SITE_SECRET={MY_APP_SITE_SECRET}
+VITE_USER_API_TOKEN={MY_APP_API_KEY}
+VITE_USER_API_BASE_URL={MY_APP_API_URL}
+```
+run npm install
+...
 
-Approach
+## Approach
 
 I adopted the BEM naming style for my css class names and ...
-Status
 
-[name of project] is still in progress. Version 2 will be out soon.
-Credits
-
-List of contriubutors:
-
-    John Doe
-    Beginners guide to BEM
-
-## Run Locally
+## Run Docker
 Install
 1- Add .env file in root of repo with below content
 REACT_APP_SITE_KEY={CATCHA_SITE_KEY}
