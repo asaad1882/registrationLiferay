@@ -1,6 +1,4 @@
-## Project Title
-
-Registration 
+## Registration 
 
 Table of Content:
 
@@ -9,7 +7,6 @@ Table of Content:
     Technologies
     Setup
     Approach
-    
 
 ## About The App
 The app is used to register users info:
