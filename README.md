@@ -56,6 +56,9 @@ run npm install
 ## Approach
 
 Use Mern stack, where backend would be dependent on microservice technology patterns 
+![image](https://github.com/user-attachments/assets/609f1105-2839-427f-adb3-d37566c64ed7)
+
+
 ## Data Flow
 ![image](https://github.com/user-attachments/assets/4104b9da-30c4-4e03-b534-089e60beb9b1)
 ## Features:
