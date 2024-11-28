@@ -33,7 +33,7 @@ function App() {
         value: 3,
         message: "Name should be at-least 3 characters.",
       }, maxLength: {
-        value: 50,
+        value: 100,
         message: "Name should be at-max 50 characters.",
       }
       ,

@@ -2,6 +2,7 @@ version: '2'
 services:
   ui:
     build: ./liferay-ui
+    container_name: frontend-container
     restart: unless-stopped
     environment:
       - NODE_ENV=production
@@ -15,6 +16,7 @@ services:
       - api
   api:
     build: ./api
+    container_name: backend-container
     restart: unless-stopped
     ports:
       - '8080:8080'
@@ -29,6 +31,7 @@ services:
       - app-network
   mongo:
     image: mongo
+    container_name: mongo-container
     restart: unless-stopped
     ports:
       - '27017:27017'

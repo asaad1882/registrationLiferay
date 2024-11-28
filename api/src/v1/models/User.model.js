@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     min: 3,
-    max: 50
+    max: 100
   },
   surname:{
     type: String,
@@ -24,9 +24,8 @@ const userSchema = new mongoose.Schema({
   type: Date,
   required: true,
  
-}
-},{
-  timestamps: true,
+},
+ createdAt: { type: Date, default: Date.now }
 });
 function validateUser(user) {
   const schema = Joi.object({
